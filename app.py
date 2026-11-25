@@ -15,7 +15,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-st.set_page_config(page_title="Olist Delivery Performance — EDA Dashboard", layout="wide")
+st.set_page_config(page_title="SmartCommerce Delivery Performance — EDA Dashboard", layout="wide")
 
 # ----------------------------------------------------------------------------
 # Data loading
@@ -30,7 +30,7 @@ def load_data(file):
     return df
 
 
-st.title("Olist Delivery Performance — Exploratory Dashboard")
+st.title("SmartCommerce Delivery Performance — Exploratory Dashboard")
 st.caption("TCX3901 Industrial Practice, Report 1 · Yeo Hui Hui, A0310673L, Group 5")
 
 try:
@@ -220,6 +220,6 @@ st.plotly_chart(fig4, use_container_width=True)
 
 st.divider()
 st.caption(
-    "Data: Olist Brazilian E-Commerce Public Dataset (Olist & Sionek, 2018), joined and "
+    "Data: SmartCommerce Brazilian E-Commerce Public Dataset (SmartCommerce & Sionek, 2018), joined and "
     "aggregated to order level as described in Report 1, Section 3."
 )
